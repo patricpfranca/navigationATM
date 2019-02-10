@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StatusBar, Image, Text } from 'react-native';
+import { View, StatusBar, Image, Text, StyleSheet } from 'react-native';
 
 import BarraNavegacao from './barraNavegacao.android';
 
@@ -14,13 +14,40 @@ export default class CenaClientes extends Component {
         <StatusBar backgroundColor='#ccc' />
         <BarraNavegacao />
 
-        <Image source={detalheClientes} />
-        <Text>Nossos Clientes</Text>
-        <Image source={cliente1} />
-        <Text>Lorem ipsum</Text>
-        <Image source={cliente2} />
-        <Text>Lorem ipsum</Text>
+        <View style={styles.cabecalho}>
+          <Image source={detalheClientes} />
+          <Text style={styles.txtTitulo}>Nossos Clientes</Text>
+        </View>
+        <View style={styles.cliente}>
+          <Image source={cliente1} />
+          <Text style={styles.txtCliente}>Lorem ipsum</Text>
+        </View>
+        <View style={styles.cliente}>
+          <Image source={cliente2} />
+          <Text style={styles.txtCliente}>Lorem ipsum</Text>
+        </View>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  cabecalho: {
+    flexDirection: 'row',
+    marginTop: 20
+  },
+  txtTitulo: {
+    fontSize: 30,
+    color: '#b9c941',
+    marginLeft: 10,
+    marginTop: 25
+  },
+  cliente: {
+    padding: 20,
+    marginTop: 10
+  },
+  txtCliente: {
+    fontSize: 18,
+    marginLeft: 20
+  }
+});
