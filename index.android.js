@@ -12,11 +12,11 @@ export default class app5 extends Component {
         initialRoute={{ id: 'a' }}
         renderScene={(route, navigator) => {
           if (route.id === 'a') {
-            return (<CenaPrincipal />);
+            return (<CenaPrincipal navigator={navigator} />);
           }
 
           if (route.id === 'b') {
-            return (<CenaClientes />);
+            return (<CenaClientes navigator={navigator} />);
           }
         }}
       />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, StatusBar, Image } from 'react-native';
+import { StyleSheet, View, StatusBar, Image, TouchableHighlight } from 'react-native';
 
 import BarraNavegacao from './barraNavegacao.android';
 
@@ -20,7 +20,13 @@ export default class CenaPrincipal extends Component {
         </View>
         <View style={styles.menu}>
           <View style={styles.menuGrupo}>
-            <Image style={styles.imgMenu} source={menuCliente} />
+            <TouchableHighlight 
+              onPress={() => {
+                this.props.navigator.push({ id: 'b' });
+              }}
+            >
+              <Image style={styles.imgMenu} source={menuCliente} />
+            </TouchableHighlight>
             <Image style={styles.imgMenu} source={menuContato} />
           </View>
           <View style={styles.menuGrupo}>
