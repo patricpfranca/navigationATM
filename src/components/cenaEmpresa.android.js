@@ -9,8 +9,8 @@ export default class CenaEmpresa extends Component {
   render() {
     return (
       <View style={{ borderWidth: 1, flex: 1, backgroundColor: '#fff' }}>
-        <StatusBar backgroundColor='#ccc' />
-        <BarraNavegacao voltar navigator={this.props.navigator} />
+        <StatusBar backgroundColor='#ec7148' />
+        <BarraNavegacao voltar navigator={this.props.navigator} corFundo='#ec7148' />
 
         <View style={styles.cabecalho}>
           <Image source={detalheEmpresa} />

@@ -9,8 +9,8 @@ export default class CenaContatos extends Component {
   render() {
     return (
       <View style={{ borderWidth: 1, flex: 1, backgroundColor: '#fff' }}>
-        <StatusBar backgroundColor='#ccc' />
-        <BarraNavegacao voltar navigator={this.props.navigator} />
+        <StatusBar backgroundColor='#61bd8c' />
+        <BarraNavegacao voltar navigator={this.props.navigator} corFundo='#61bd8c' />
 
         <View style={styles.cabecalho}>
           <Image source={detalheContatos} />

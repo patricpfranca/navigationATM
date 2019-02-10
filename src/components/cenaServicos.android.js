@@ -9,8 +9,8 @@ export default class CenaServicos extends Component {
   render() {
     return (
       <View style={{ borderWidth: 1, flex: 1, backgroundColor: '#fff' }}>
-        <StatusBar backgroundColor='#ccc' />
-        <BarraNavegacao voltar navigator={this.props.navigator} />
+        <StatusBar backgroundColor='#19d1c8' />
+        <BarraNavegacao voltar navigator={this.props.navigator} corFundo='#19d1c8' />
 
         <View style={styles.cabecalho}>
           <Image source={detalheServicos} />
