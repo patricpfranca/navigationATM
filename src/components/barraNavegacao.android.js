@@ -9,6 +9,8 @@ export default class BarraNavegacao extends Component {
       return (
         <View style={[styles.barraTitulo, { backgroundColor: this.props.corFundo }]}>
           <TouchableHighlight
+            underlayColor={this.props.corFundo}
+            activeOpacity={0.3}
             onPress={() => {
               this.props.navigator.pop();
             }}
