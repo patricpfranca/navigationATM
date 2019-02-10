@@ -8,7 +8,7 @@ const detalheEmpresa = require('../imgs/detalhe_empresa.png');
 export default class CenaEmpresa extends Component {
   render() {
     return (
-      <View>
+      <View style={{ borderWidth: 1, flex: 1, backgroundColor: '#fff' }}>
         <StatusBar backgroundColor='#ccc' />
         <BarraNavegacao voltar navigator={this.props.navigator} />
 

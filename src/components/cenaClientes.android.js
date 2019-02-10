@@ -10,7 +10,7 @@ const cliente2 = require('../imgs/cliente2.png');
 export default class CenaClientes extends Component {
   render() {
     return (
-      <View>
+      <View style={{ borderWidth: 1, flex: 1, backgroundColor: '#fff' }}>
         <StatusBar backgroundColor='#ccc' />
         <BarraNavegacao voltar navigator={this.props.navigator} />
 
