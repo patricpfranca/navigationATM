@@ -43,7 +43,13 @@ export default class CenaPrincipal extends Component {
             >  
               <Image style={styles.imgMenu} source={menuEmpresa} />
             </TouchableHighlight>
-            <Image style={styles.imgMenu} source={menuServicos} />
+            <TouchableHighlight 
+              onPress={() => {
+                this.props.navigator.push({ id: 'servicos' });
+              }}
+            >
+              <Image style={styles.imgMenu} source={menuServicos} />
+            </TouchableHighlight>
           </View>          
         </View>        
       </View>
