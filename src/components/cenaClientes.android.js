@@ -12,7 +12,7 @@ export default class CenaClientes extends Component {
     return (
       <View>
         <StatusBar backgroundColor='#ccc' />
-        <BarraNavegacao voltar />
+        <BarraNavegacao voltar navigator={this.props.navigator} />
 
         <View style={styles.cabecalho}>
           <Image source={detalheClientes} />
